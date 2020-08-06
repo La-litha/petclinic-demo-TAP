@@ -33,6 +33,7 @@ pipeline {
           withDockerRegistry('', registryCredential) {
               dockerImage.push()
           }
+         }
       }
     }
     stage ('Deploy to Dev') {
